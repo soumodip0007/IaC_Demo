@@ -13,10 +13,10 @@ provider "local" {}
 resource "local_file" "devops_report" {
   filename = "${path.module}/devops-report.txt"
 
-  content = <<-EOT
-    My First Infrastructure as Code Project
-    Created using Terraform and AI
-  EOT
+  # content = <<-EOT
+  #   My First Infrastructure as Code Project
+  #   Created using Terraform and AI
+  # EOT
 
   # content = <<-EOT
   #   My AI-Driven DevOps Project
@@ -24,4 +24,12 @@ resource "local_file" "devops_report" {
   #   Environment: Development
   #   Status: Active
   # EOT
+
+  content = <<-EOT
+    My AI-Driven DevOps Project
+    Infrastructure managed using Terraform
+    Environment: Development
+    Status: Active
+    Version Control: Git
+  EOT
 }

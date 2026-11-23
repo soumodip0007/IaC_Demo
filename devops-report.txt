@@ -1,0 +1,2 @@
+My First Infrastructure as Code Project
+Created using Terraform and AI

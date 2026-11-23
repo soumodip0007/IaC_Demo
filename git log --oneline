@@ -1,0 +1,32 @@
+[1mdiff --git a/main.tf b/main.tf[m
+[1mindex 1afc905..95f4f20 100644[m
+[1m--- a/main.tf[m
+[1m+++ b/main.tf[m
+[36m@@ -13,10 +13,10 @@[m [mprovider "local" {}[m
+ resource "local_file" "devops_report" {[m
+   filename = "${path.module}/devops-report.txt"[m
+ [m
+[31m-  content = <<-EOT[m
+[31m-    My First Infrastructure as Code Project[m
+[31m-    Created using Terraform and AI[m
+[31m-  EOT[m
+[32m+[m[32m  # content = <<-EOT[m
+[32m+[m[32m  #   My First Infrastructure as Code Project[m
+[32m+[m[32m  #   Created using Terraform and AI[m
+[32m+[m[32m  # EOT[m
+ [m
+   # content = <<-EOT[m
+   #   My AI-Driven DevOps Project[m
+[36m@@ -24,4 +24,12 @@[m [mresource "local_file" "devops_report" {[m
+   #   Environment: Development[m
+   #   Status: Active[m
+   # EOT[m
+[32m+[m
+[32m+[m[32m  content = <<-EOT[m
+[32m+[m[32m    My AI-Driven DevOps Project[m
+[32m+[m[32m    Infrastructure managed using Terraform[m
+[32m+[m[32m    Environment: Development[m
+[32m+[m[32m    Status: Active[m
+[32m+[m[32m    Version Control: Git[m
+[32m+[m[32m  EOT[m
+ }[m
